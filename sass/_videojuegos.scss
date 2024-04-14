@@ -1,0 +1,58 @@
+/*pagina VIDEOJUEGOS*/
+
+.seccion-videojuegos {background-image: url(../assets/img/videojuegos/fondovideojuegos.png);
+    height: 100px;
+    background-color: blueviolet;
+    background-size: cover;
+    background-position: center;
+    }
+    .headervideojuegos{
+        position: relative;
+        padding: 0 2rem;
+    }
+    .li {list-style: none;}
+    a:hover {color: deepskyblue;}
+    .action-btn {background-color: darkorange;
+    color: rgb(219, 242, 15);
+    padding: 0,5rem 1rem;
+    border: none;
+    outline: none;
+    border: radius 20px; 
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    }
+    
+    .navbarvideojuegos {width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gold;}
+    .navbarvideojuegos .logovideojuegos {font-size: 1.5rem;
+    font-weight: bold;}
+    .navbarvideojuegos .links {
+        display: flex;
+        gap: 2rem;
+    }
+    .navbarvideojuegos .togle_btn {
+        color: rgb(255, 234, 0);
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: none;
+    }
+    .titulovideojuegos {text-align: center;
+    height: 70px;
+    margin: 467px 192px -16px -717px;
+    ;}
+    
+    
+    .videojuegostexto {text-align: center;
+    width: 1000px;
+    display: flex; width: 100px;
+    text-align: center; position: relative;
+    top: -1260px;;right: -535px
+    }
+    

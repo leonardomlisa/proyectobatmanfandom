@@ -1,0 +1,107 @@
+@import "generales.scss";
+@import "index.scss";
+@import "comics.scss";
+@import "videojuegos.scss";
+@import "peliculas.scss";
+@import "historia.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MODIFICACIONES RESPONSIVE*/
+
+@media ( max-width:1024){
+.headerindex {width: 80%;
+justify-content: space-around;
+align-items: center;}
+.colornav1{width: 70%;
+display: inline;}
+.colorindex {flex-direction: column;}
+.encabezado {width: 60%;}
+.buscadorinicio{ width: 50%;
+height: 50%;}
+.imagenizquierda{ margin: 10 20 20 10;}
+.imagenderecha{margin: 10 20 20 10;}
+.textoprincipal{display: none;
+align-items: center;
+position: relative;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: -626px;
+    right: -29px;}
+
+    /*historia*/
+
+    .navbarhistoria
+    {background-color: blue;}
+}
+
+
+
+
+
+
+
+
+@media (max-width:768){
+.colornav1 {display: none;
+flex-direction: column;}
+    .colorindex {flex-direction: column;
+    border-radius: 100%;}
+    .textoprincipal{ height: auto;
+    width: auto;}
+
+    /*historia*/
+    .navbarhistoria{
+        background-color: blue}
+        
+    /*peliculas*/
+    .navbarpeliculas ul li {flex-direction: column;}    
+
+
+    }
+
+@media (max-width:320){
+.colorindex {text-decoration: blue;}
+.textoprincipal{text-align: left;}
+
+/*historia*/
+
+.navbarhistoria ul li a { 
+    background-color: hotpink;
+    flex-direction: column;}
+    
+    .sitiohistoria {display:none;}
+
+ /*peliculas*/
+ .sitiopeliculas a span {display: none;}
+
+ .navbarpeliculas a span {flex-direction: column;}
+
+
+}
+
+   
+    
+
+    
+
+
+
+
+

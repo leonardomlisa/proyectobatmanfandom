@@ -1,0 +1,73 @@
+  /* inicio INDEX*/
+
+  .button1{
+    font-family: "Holtwood One SC";
+    padding: 10px 10px;
+    background-position: right;
+background-color: rgb(148, 46, 245);
+}
+.button2 {font-family: "Holtwood One SC";
+    padding: 10px 10px;
+    background-position: right;
+background-color: rgb(148, 46, 245);}
+
+.buscadorinicio {flex-direction: row;
+    justify-content: right;
+    margin-top: 20px;
+}
+.colornav1 {background-color: goldenrod;
+width: 100%;
+height: 100%;}
+
+.colorindex {color: black;}
+
+.galeria-contenedora {
+    margin-top: -60px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+
+    display: grid;
+ grid-template-columns: repeat(auto-fit minmax(250px 1fr));
+ background-color: rgb(182, 39, 238);
+}
+.galeria-contenedora img {height: 90%;
+    width: 20%;
+object-fit: cover;}
+
+.primerafila {display: flex;
+    flex-direction: row;
+    justify-content: center;
+gap: 10px;}
+    .segundafila {display: flex;
+        flex-direction: row;
+        justify-content: center;
+    gap: 10px;}
+
+
+.encabezado {
+height: auto;
+width: auto;
+margin-top: 20px;}
+
+.imagenizquierda {margin: 60px 30px 30px -1000px;}
+
+.imagenderecha {margin:-620px 20px 20px 1000px;}
+
+.textoprincipal {display: flex; width: 100px;
+text-align: center; position: relative;
+top: -611px;;right: -611px;
+}
+main section {display: flex;
+width: 600px;
+height: 430px;}
+ img{ width: 0px;
+flex-grow: 1;
+object-fit: cover;
+opacity: .8;
+transition: .5s ease;}
+ img:hover {cursor: crosshair;
+width: 300px;
+opacity: 1;
+filter: contrast(120%);}
+
