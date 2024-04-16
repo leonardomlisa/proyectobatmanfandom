@@ -15,7 +15,7 @@ ul li {
 }
 
 a {
-  text-decoration: color(from color srgb r g b);
+  text-decoration: rgb(5, 5, 5);
 }
 
 body {
@@ -26,6 +26,17 @@ body {
 }
 
 /* inicio INDEX*/
+.colornav1 li {
+  list-style: none;
+  display: inline;
+  text-align: center;
+  padding: 3rem;
+}
+
+a {
+  text-decoration: color(from color srgb r g b);
+}
+
 .button1 {
   font-family: "Holtwood One SC";
   padding: 10px 10px;
@@ -44,16 +55,22 @@ body {
   flex-direction: row;
   justify-content: right;
   margin-top: 20px;
+  width: 20px;
+  min-height: 20px;
 }
 
 .colornav1 {
-  background-color: goldenrod;
+  background-color: rgb(5, 5, 5);
   width: 100%;
   height: 100%;
 }
 
 .colorindex {
-  color: black;
+  background-color: gold;
+}
+
+.icono {
+  background-color: gold;
 }
 
 .galeria-contenedora {
@@ -109,7 +126,7 @@ body {
   right: -611px;
 }
 
-main section {
+.carrusel {
   display: flex;
   width: 600px;
   height: 430px;
@@ -130,6 +147,10 @@ img:hover {
   filter: contrast(120%);
 }
 
+.carrusel {
+  margin-bottom: 100px;
+}
+
 /* pagina COMICS */
 .seccion-comics {
   background-image: url(../assets/img/comics/fondocomics.png);
@@ -147,28 +168,17 @@ a {
 }
 
 .colornav {
-  background-color: blueviolet;
+  background-color: rgb(5, 5, 5);
 }
 
 .buscador {
   justify-content: space-between;
 }
 
-.primeraseccion {
+.primeraseccion, .segundaseccion, .terceraseccion {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.segundaseccion {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.terceraseccion {
-  display: flex;
-  flex-direction: row;
 }
 
 .titulo2 {
@@ -184,35 +194,35 @@ a {
 }
 
 .color2 {
-  background-color: rgb(221, 228, 96);
+  background-color: gold;
 }
 
 .color3 {
-  background-color: rgb(221, 228, 96);
+  background-color: gold;
 }
 
 .color4 {
-  background-color: rgb(221, 228, 96);
+  background-color: gold;
 }
 
 .color5 {
-  background-color: rgb(221, 228, 96);
+  background-color: gold;
 }
 
 .color6 {
-  background-color: rgb(221, 228, 96);
+  background-color: gold;
 }
 
 .color7 {
-  background-color: rgb(221, 228, 96);
+  background-color: gold;
 }
 
 .color8 {
-  background-color: rgb(221, 228, 96);
+  background-color: gold;
 }
 
 .color9 {
-  background-color: rgb(221, 228, 96);
+  background-color: gold;
 }
 
 /*pagina VIDEOJUEGOS*/
@@ -229,52 +239,24 @@ a {
   padding: 0 2rem;
 }
 
-.li {
+.colornav3 {
+  background-color: rgb(5, 5, 5);
+}
+
+.colornav3 ul li {
   list-style: none;
+  display: inline;
+  text-align: center;
+  padding: 3rem;
 }
 
-a:hover {
-  color: deepskyblue;
+a {
+  text-decoration: color(from color srgb r g b);
+  background-color: rgb(5, 5, 5);
 }
 
-.action-btn {
-  background-color: darkorange;
-  color: rgb(219, 242, 15);
-  padding: 0, 5rem 1rem;
-  border: none;
-  outline: none;
-  border: radius 20px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.navbarvideojuegos {
-  width: 100%;
-  height: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: gold;
-}
-
-.navbarvideojuegos .logovideojuegos {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.navbarvideojuegos .links {
-  display: flex;
-  gap: 2rem;
-}
-
-.navbarvideojuegos .togle_btn {
-  color: rgb(255, 234, 0);
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
+.h1 {
+  margin: left -100px;
 }
 
 .titulovideojuegos {
@@ -294,13 +276,39 @@ a:hover {
   right: -535px;
 }
 
+main section {
+  display: flex;
+  width: 300px;
+  height: 300px;
+}
+
+img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.imagenvideo {
+  width: 200px;
+  margin: bottom 200px;
+}
+
 /*pagina PELICULAS*/
 .seccion-peliculas {
   background-image: url(../assets/peliculas/fondopeliculas.png);
 }
 
 .navbarpeliculas {
-  background-color: blueviolet;
+  background-color: rgb(5, 5, 5);
 }
 
 .navbarpeliculas ul li {
@@ -324,7 +332,7 @@ a {
 }
 
 .navbarhistoria {
-  background-color: blueviolet;
+  background-color: rgb(5, 5, 5);
 }
 
 /*MODIFICACIONES RESPONSIVE*/
@@ -400,7 +408,7 @@ a {
   }
   /*historia*/
   .navbarhistoria ul li a {
-    background-color: hotpink;
+    background-color: gold;
     flex-direction: column;
   }
   .sitiohistoria {
@@ -412,6 +420,26 @@ a {
   }
   .navbarpeliculas a span {
     flex-direction: column;
+  }
+}
+/*comics*/
+@media (max-width: 1440) {
+  .primeraseccion, .segundaseccion, .terceraseccion {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1024) {
+  .seccion-comics {
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 768) {
+  .colornav1 {
+    padding: auto;
+    display: flex;
   }
 }
 

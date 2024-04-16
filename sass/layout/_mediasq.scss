@@ -1,33 +1,9 @@
-@import "generales.scss";
-@import "index.scss";
-@import "comics.scss";
-@import "videojuegos.scss";
-@import "peliculas.scss";
-@import "historia.scss";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*MODIFICACIONES RESPONSIVE*/
 
-@media ( max-width:1024){
+@media ( max-width:1024) {
 .headerindex {width: 80%;
 justify-content: space-around;
-align-items: center;}
+align-items: center;}}
 .colornav1{width: 70%;
 display: inline;}
 .colorindex {flex-direction: column;}
@@ -45,19 +21,6 @@ position: relative;
     top: -626px;
     right: -29px;}
 
-    /*historia*/
-
-    .navbarhistoria
-    {background-color: blue;}
-}
-
-
-
-
-
-
-
-
 @media (max-width:768){
 .colornav1 {display: none;
 flex-direction: column;}
@@ -65,16 +28,10 @@ flex-direction: column;}
     border-radius: 100%;}
     .textoprincipal{ height: auto;
     width: auto;}
-
-    /*historia*/
-    .navbarhistoria{
-        background-color: blue}
         
     /*peliculas*/
     .navbarpeliculas ul li {flex-direction: column;}    
-
-
-    }
+}
 
 @media (max-width:320){
 .colorindex {text-decoration: blue;}
@@ -83,7 +40,7 @@ flex-direction: column;}
 /*historia*/
 
 .navbarhistoria ul li a { 
-    background-color: hotpink;
+    background-color:$background-color;
     flex-direction: column;}
     
     .sitiohistoria {display:none;}
@@ -93,8 +50,31 @@ flex-direction: column;}
 
  .navbarpeliculas a span {flex-direction: column;}
 
-
 }
+
+/*comics*/
+@media ( max-width:1440){
+    .primeraseccion {display: none;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media ( max-width:1024) {
+    .seccion-comics{ background-size: cover;
+    background-position: center};
+}
+
+
+@media (max-width:768){
+    .colornav1{padding: auto;
+    display: flex;
+}
+}
+
+
+
+@media (max-width:320){}
 
    
     

@@ -9,17 +9,14 @@
     a{text-decoration:color(from color srgb r g b);}
     
 
-.colornav {background-color: blueviolet;}
+.colornav {background-color:$color-fuente;}
 .buscador {justify-content: space-between;}
 
 .primeraseccion {display: flex;
 flex-direction: row;
 justify-content: center;}
-.segundaseccion {display: flex;
-    flex-direction: row;
-justify-content: center;}
-    .terceraseccion {display: flex;
-        flex-direction: row;
+.segundaseccion {@extend .primeraseccion}
+    .terceraseccion { @extend .segundaseccion;
 }
 .titulo2 {justify-content: center;}
 .titulo3 {justify-content: center;}
@@ -27,19 +24,19 @@ justify-content: center;}
 .color1 
 {background-color: rgb(221, 228, 96);}
 .color2 
-{background-color: rgb(221, 228, 96);}
+{background-color:$background-color;}
 .color3
-{background-color: rgb(221, 228, 96);}
+{background-color:$background-color;}
 .color4
-{background-color: rgb(221, 228, 96);}
+{background-color:$background-color;}
 .color5
-{background-color: rgb(221, 228, 96);}
+{background-color:$background-color;}
 .color6
-{background-color: rgb(221, 228, 96);}
+{background-color:$background-color;}
 .color7
-{background-color: rgb(221, 228, 96);}
+{background-color:$background-color;}
 .color8
-{background-color: rgb(221, 228, 96);}
+{background-color:$background-color;}
 .color9
-{background-color: rgb(221, 228, 96);}
+{background-color:$background-color;}
 
