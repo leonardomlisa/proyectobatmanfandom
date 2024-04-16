@@ -1,271 +1,364 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    width: 100;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  width: 100;
+  box-sizing: border-box;
 }
 
 /*comandos GENERICOS*/
 
-
-ul li{list-style: none;
-    display: inline;
-    text-align: center;
-    padding: 3rem;}
-    a{text-decoration:color(from color srgb r g b);}
-    body{background-color: gold;
-        font-family: "Holtwood One SC", serif;
-    background-attachment: fixed;
-    text-align: center;}
-
-    /* inicio INDEX*/
-
-    .colornav1 li {list-style: none;
-        display: inline;
-        text-align: center;
-        padding: 3rem;}
-        a{text-decoration:color(from color srgb r g b);}
-
-    .button1{
-        font-family: "Holtwood One SC";
-        padding: 10px 10px;
-        background-position: right;
-    background-color: rgb(148, 46, 245);
-    }
-    .button2 {font-family: "Holtwood One SC";
-        padding: 10px 10px;
-        background-position: right;
-    background-color: rgb(148, 46, 245);}
-    
-    .buscadorinicio {flex-direction: row;
-        justify-content: right;
-        margin-top: 20px;
-    }
-    .colornav1 {background-color: rgb(5, 5, 5);
-        width: 100%;
-height: 100%;}
-
-    .colorindex {color: gold;}
-    .icono {background-color: gold;}
-
-    .galeria-contenedora {
-        margin-top: -60px;
-        width: 100%;
-        max-width: 1100px;
-        margin: 40px auto;
-
-        display: grid;
-     grid-template-columns: repeat(auto-fit minmax(250px 1fr));
-     background-color: rgb(182, 39, 238);
-    }
-    .galeria-contenedora img {height: 90%;
-        width: 20%;
-    object-fit: cover;}
-
-    .primerafila {display: flex;
-        flex-direction: row;
-        justify-content: center;
-    gap: 10px;}
-        .segundafila {display: flex;
-            flex-direction: row;
-            justify-content: center;
-        gap: 10px;}
-  
-
-    .encabezado {
-    height: auto;
-width: auto;
-margin-top: 20px;}
-
-.imagenizquierda {margin: 60px 30px 30px -1000px;}
-
-.imagenderecha {margin:-620px 20px 20px 1000px;}
-
-.textoprincipal {display: flex; width: 100px;
-text-align: center; position: relative;
-top: -611px;;right: -611px;
+ul li {
+  list-style: none;
+  display: inline;
+  text-align: center;
+  padding: 3rem;
 }
 
-    
+a {
+  text-decoration: color(from color srgb r g b);
+}
 
+body {
+  background-color: gold;
+  font-family: "Holtwood One SC", serif;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+/* inicio INDEX*/
+
+.colornav1 li {
+  list-style: none;
+  display: inline;
+  text-align: center;
+  padding: 3rem;
+}
+
+a {
+  text-decoration: color(from color srgb r g b);
+}
+
+.button1, .button2 {
+  font-family: "Holtwood One SC";
+  padding: 10px 10px;
+  background-position: right;
+  background-color: rgb(148, 46, 245);
+}
+
+.buscadorinicio {
+  flex-direction: row;
+  justify-content: right;
+  margin-top: 20px;
+}
+
+.colornav1 {
+  background-color: rgb(5, 5, 5);
+  width: 100%;
+  height: 100%;
+}
+
+.colorindex {
+  color: gold;
+}
+
+.icono {
+  background-color: gold;
+}
+
+.galeria-contenedora {
+  margin-top: -60px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit minmax(250px 1fr));
+  background-color: rgb(182, 39, 238);
+
+  img {
+    height: 90%;
+    width: 20%;
+    object-fit: cover;
+  }
+}
+
+.primerafila, .segundafila {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.encabezado {
+  height: auto;
+  width: auto;
+  margin-top: 20px;
+}
+
+.imagenizquierda {
+  margin: 60px 30px 30px -1000px;
+}
+
+.imagenderecha {
+  margin: -620px 20px 20px 1000px;
+}
+
+.textoprincipal {
+  display: flex;
+  width: 100px;
+  text-align: center;
+  position: relative;
+  top: -611px;
+  right: -611px;
+}
 
 /* pagina COMICS */
 
-.seccion-comics {background-image: url(../assets/img/comics/fondocomics.png);}
-
-.colornav li {list-style: none;
-    display: inline;
-    text-align: center;
-    padding: 3rem;}
-    a{text-decoration:color(from color srgb r g b);}
-    
-
-
-
-.colornav {background-color: rgb(5, 5, 5);}
-.buscador {justify-content: space-between;}
-
-.primeraseccion {display: flex;
-flex-direction: row;
-justify-content: center;}
-.segundaseccion {display: flex;
-    flex-direction: row;
-justify-content: center;}
-    .terceraseccion {display: flex;
-        flex-direction: row;
+.seccion-comics {
+  background-image: url(../assets/img/comics/fondocomics.png);
 }
-.titulo2 {justify-content: center;}
-.titulo3 {justify-content: center;}
 
-.color1 
-{background-color: rgb(221, 228, 96);}
-.color2 
-{background-color: rgb(221, 228, 96);}
-.color3
-{background-color: rgb(221, 228, 96);}
-.color4
-{background-color: rgb(221, 228, 96);}
-.color5
-{background-color: rgb(221, 228, 96);}
-.color6
-{background-color: rgb(221, 228, 96);}
-.color7
-{background-color: rgb(221, 228, 96);}
-.color8
-{background-color: rgb(221, 228, 96);}
-.color9
-{background-color: rgb(221, 228, 96);}
+.colornav li {
+  list-style: none;
+  display: inline;
+  text-align: center;
+  padding: 3rem;
+}
 
+a {
+  text-decoration: color(from color srgb r g b);
+}
+
+.colornav {
+  background-color: rgb(5, 5, 5);
+}
+
+.buscador {
+  justify-content: space-between;
+}
+
+.primeraseccion, .segundaseccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.terceraseccion {
+  display: flex;
+  flex-direction: row;
+}
+
+.titulo2, .titulo3 {
+  justify-content: center;
+}
+
+.color1, .color2, .color3, .color4, .color5, .color6, .color7, .color8, .color9 {
+  background-color: rgb(221, 228, 96);
+}
 
 /*pagina VIDEOJUEGOS*/
 
-.seccion-videojuegos {background-image: url(../assets/img/videojuegos/fondovideojuegos.png);
-height: 100px;
-background-color: blueviolet;
-background-size: cover;
-background-position: center;
-}
-.headervideojuegos{
-    position: relative;
-    padding: 0 2rem;
+.seccion-videojuegos {
+  background-image: url(../assets/img/videojuegos/fondovideojuegos.png);
+  height: 100px;
+  background-color: blueviolet;
+  background-size: cover;
+  background-position: center;
 }
 
-.colornav3 {background-color:rgb(5, 5, 5);}
-.colornav3  ul li {list-style: none;
+.headervideojuegos {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.colornav3 {
+  background-color: rgb(5, 5, 5);
+
+  ul li {
+    list-style: none;
     display: inline;
     text-align: center;
     padding: 3rem;
-    text-decoration:color(from color srgb r g b);
-background-color: rgb(5, 5, 5);}
-.h1{margin: left -100px;;}
-
-.titulovideojuegos {text-align: center;
-height: 70px;
-margin: 467px 192px -16px -717px;
-;}
-
-
-.videojuegostexto {text-align: center;
-width: 1000px;
-display: flex; width: 100px;
-text-align: center; position: relative;
-top: -1260px;;right: -535px
+    text-decoration: color(from color srgb r g b);
+    background-color: rgb(5, 5, 5);
+  }
 }
 
+.h1 {
+  margin: left -100px;
+}
 
+.titulovideojuegos {
+  text-align: center;
+  height: 70px;
+  margin: 467px 192px -16px -717px;
+}
 
-
-
+.videojuegostexto {
+  text-align: center;
+  width: 1000px;
+  display: flex;
+  width: 100px;
+  text-align: center;
+  position: relative;
+  top: -1260px;
+  right: -535px;
+}
 
 /*pagina PELICULAS*/
 
-.seccion-peliculas {background-image: url(../assets/peliculas/fondopeliculas.png);}
+.seccion-peliculas {
+  background-image: url(../assets/peliculas/fondopeliculas.png);
+}
 
-.navbarpeliculas {background-color: rgb(5, 5, 5);}
+.navbarpeliculas {
+  background-color: rgb(5, 5, 5);
 
-.navbarpeliculas ul li {list-style: none;
-display: inline;
-text-align: center;
-padding: 3rem;}
-a{text-decoration:color(from color srgb r g b);}
+  ul li {
+    list-style: none;
+    display: inline;
+    text-align: center;
+    padding: 3rem;
+  }
+}
 
-
-
-
-
+a {
+  text-decoration: color(from color srgb r g b);
+}
 
 /*pagina HISTORIA*/
 
-.seccion-historia {background-image: url(../assets/img/historia/fondohistoria.png);
-    height: 100px;
-background-color: rgb(236, 199, 37);
-background-size: cover;
-background-position: center;
-} 
+.seccion-historia {
+  background-image: url(../assets/img/historia/fondohistoria.png);
+  height: 100px;
+  background-color: rgb(236, 199, 37);
+  background-size: cover;
+  background-position: center;
+}
 
-.navbarhistoria {background-color:rgb(5, 5, 5);}
-
-
+.navbarhistoria {
+  background-color: rgb(5, 5, 5);
+}
 
 /*MODIFICACIONES RESPONSIVE*/
-
 @media ( max-width:1024){
-.headerindex {width: 80%;
-justify-content: space-around;
-align-items: center;}
-.colornav1{width: 70%;
-display: inline;}
-.colorindex {flex-direction: column;}
-.encabezado {width: 60%;}
-.buscadorinicio{ width: 50%;
-height: 50%;}
-.imagenizquierda{ margin: 10 20 20 10;}
-.imagenderecha{margin: 10 20 20 10;}
-.textoprincipal{display: none;
-align-items: center;
-position: relative;
+    .headerindex {width: 80%;
+    justify-content: space-around;
+    align-items: center;}
+    .colornav1{width: 70%;
+    display: inline;}
+    .colorindex {flex-direction: column;}
+    .encabezado {width: 60%;}
+    .buscadorinicio{ width: 50%;
+    height: 50%;}
+    .imagenizquierda{ margin: 10 20 20 10;}
+    .imagenderecha{margin: 10 20 20 10;}
+    .textoprincipal{display: none;
+    align-items: center;
+    position: relative;
+        width: 50%;
+        text-align: center;
+        position: relative;
+        top: -626px;
+        right: -29px;}
+    }
+    
+    @media (max-width:768){
+    .colornav1 {display: none;
+    flex-direction: column;}
+        .colorindex {flex-direction: column;
+        border-radius: 100%;}
+        .textoprincipal{ height: auto;
+        width: auto;}
+
+@media (max-width: 1024) {
+  .headerindex {
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .colornav1 {
+    width: 70%;
+    display: inline;
+  }
+
+  .colorindex {
+    flex-direction: column;
+  }
+
+  .encabezado {
+    width: 60%;
+  }
+
+  .buscadorinicio {
+    width: 50%;
+    height: 50%;
+  }
+
+  .imagenizquierda, .imagenderecha {
+    margin: 10 20 20 10;
+  }
+
+  .textoprincipal {
+    display: none;
+    align-items: center;
+    position: relative;
     width: 50%;
     text-align: center;
     position: relative;
     top: -626px;
-    right: -29px;}
+    right: -29px;
+  }
 }
 
-
-
-
-
-
-
-
-@media (max-width:768){
-.colornav1 {display: none;
-flex-direction: column;}
-    .colorindex {flex-direction: column;
-    border-radius: 100%;}
-    .textoprincipal{ height: auto;
-    width: auto;}
-
-    /*historia*/
+@media (max-width: 768) {
+ /* Estilos base */
+ul {
+    list-style: none;
+    padding: 0;
+  }
   
-        
+  li {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    li {
+      display: block; 
+      padding: 0.5rem; 
+    }
+  }
+  
+  }
+
+  /*peliculas*/
+
+  .navbarpeliculas ul li {
+    flex-direction: column;
+  }
+
+
+@media (max-width: 320) {
+  
+  .textoprincipal {
+    text-align: left;
+  }
     /*peliculas*/
     .navbarpeliculas ul li {flex-direction: column;}    
-
+    .navbarpeliculas a span {
+        flex-direction: column;
+      }
 
     }
 
 @media (max-width:320){
-.colorindex {text-decoration: blue;}
 .textoprincipal{text-align: left;}
 
-/*historia*/
 
-.navbarhistoria ul li a { 
-    background-color: hotpink;
-    flex-direction: column;}
     
     .sitiohistoria {display:none;}
 
@@ -274,15 +367,21 @@ flex-direction: column;}
 
  .navbarpeliculas a span {flex-direction: column;}
 
-
 }
 
-   
+
+  /*historia*/
+
+  .navbarhistoria ul li a {
+    flex-direction: column;
+  }
+
+  .sitiohistoria, .sitiopeliculas a span {
+    display: none;
+  }
+}   .navbarhistoria ul li a { 
+    flex-direction: column;}
     
-
-    
-
-
-
-
-
+      
+            
+      
