@@ -26,22 +26,14 @@ body {
 }
 
 /* inicio INDEX*/
-.colornav1 li {
-  list-style: none;
-  display: inline;
-  text-align: center;
-  padding: 3rem;
-}
-
-a {
-  text-decoration: color(from color srgb r g b);
-}
 
 .button1 {
   font-family: "Holtwood One SC";
   padding: 10px 10px;
   background-position: right;
   background-color: rgb(148, 46, 245);
+  width: 40px;
+height: 40px;
 }
 
 .button2 {
@@ -49,6 +41,8 @@ a {
   padding: 10px 10px;
   background-position: right;
   background-color: rgb(148, 46, 245);
+  width: 10px;
+height: 10px;
 }
 
 .buscadorinicio {
@@ -239,11 +233,11 @@ a {
   padding: 0 2rem;
 }
 
-.colornav3 {
+.colornav {
   background-color: rgb(5, 5, 5);
 }
 
-.colornav3 ul li {
+.colornav ul li {
   list-style: none;
   display: inline;
   text-align: center;
@@ -276,26 +270,6 @@ a {
   right: -535px;
 }
 
-main section {
-  display: flex;
-  width: 300px;
-  height: 300px;
-}
-
-img {
-  width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  opacity: 0.8;
-  transition: 0.5s ease;
-}
-
-img:hover {
-  cursor: crosshair;
-  width: 300px;
-  opacity: 1;
-  filter: contrast(120%);
-}
 
 .imagenvideo {
   width: 200px;

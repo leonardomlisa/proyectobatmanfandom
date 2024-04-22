@@ -16,9 +16,6 @@ ul li {
   padding: 3rem;
 }
 
-a {
-  text-decoration: color(from color srgb r g b);
-}
 
 body {
   background-color: gold;
@@ -29,27 +26,9 @@ body {
 
 /* inicio INDEX*/
 
-.colornav1 li {
-  list-style: none;
-  display: inline;
-  text-align: center;
-  padding: 3rem;
-}
-
-a {
-  text-decoration: color(from color srgb r g b);
-}
-
-.button1, .button2 {
-  font-family: "Holtwood One SC";
-  padding: 10px 10px;
-  background-position: right;
-  background-color: rgb(148, 46, 245);
-}
-
-.buscadorinicio {
-  flex-direction: row;
-  justify-content: right;
+.encabezado {
+  height: auto;
+  width: auto;
   margin-top: 20px;
 }
 
@@ -65,6 +44,19 @@ a {
 
 .icono {
   background-color: gold;
+}
+
+.button1, .button2 {
+  font-family: "Holtwood One SC";
+  padding: 10px 10px;
+  background-position: right;
+  background-color: rgb(148, 46, 245);
+}
+
+.buscadorinicio {
+  flex-direction: row;
+  justify-content: right;
+  margin-top: 20px;
 }
 
 .galeria-contenedora {
@@ -90,18 +82,23 @@ a {
   gap: 10px;
 }
 
-.encabezado {
-  height: auto;
-  width: auto;
-  margin-top: 20px;
+.imagenizquierda {
+  margin-left: -900px; 
 }
 
-.imagenizquierda {
-  margin: 60px 30px 30px -1000px;
+.imagenizquierda img {
+  max-width: 100%; 
+  height: auto; 
 }
 
 .imagenderecha {
-  margin: -620px 20px 20px 1000px;
+  margin-right: -900px;
+  margin-top: -600px; 
+}
+
+.imagenderecha img {
+  max-width: 100%;
+  height: auto; 
 }
 
 .textoprincipal {
@@ -109,9 +106,43 @@ a {
   width: 100px;
   text-align: center;
   position: relative;
-  top: -611px;
+  top: -550px;
   right: -611px;
 }
+
+.imagenesmovimiento {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 80%; 
+  height: 60%; 
+}
+
+
+.imagenesmovimiento  img {
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: width 0.7s ease; 
+}
+
+.imagenesmovimiento img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.imagenesmovimiento {
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-top: -300px;
+  margin-right: 100px;
+}
+
+
+
 
 /* pagina COMICS */
 
@@ -124,10 +155,6 @@ a {
   display: inline;
   text-align: center;
   padding: 3rem;
-}
-
-a {
-  text-decoration: color(from color srgb r g b);
 }
 
 .colornav {
@@ -185,15 +212,13 @@ a {
   }
 }
 
-.h1 {
-  margin: left -100px;
-}
 
 .titulovideojuegos {
-  text-align: center;
-  height: 70px;
-  margin: 467px 192px -16px -717px;
-}
+  text-align: center; 
+    margin-top: 20px;
+margin-bottom: 20px;
+margin-left: 30px;
+margin-right: 30px;};
 
 .videojuegostexto {
   text-align: center;
@@ -205,6 +230,22 @@ a {
   top: -1260px;
   right: -535px;
 }
+.imagenvideo {
+  display: flex;
+  width: -300px;
+  height: -130px;
+}
+.imagenvideo img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s;
+}
+.imagenvideo img :hover {cursor: crosshair;
+width:150px;
+opacity: 1;
+filter: contrast(120%);}
 
 /*pagina PELICULAS*/
 
@@ -223,9 +264,6 @@ a {
   }
 }
 
-a {
-  text-decoration: color(from color srgb r g b);
-}
 
 /*pagina HISTORIA*/
 
@@ -243,145 +281,142 @@ a {
 
 /*MODIFICACIONES RESPONSIVE*/
 @media ( max-width:1024){
-    .headerindex {width: 80%;
-    justify-content: space-around;
-    align-items: center;}
-    .colornav1{width: 70%;
-    display: inline;}
-    .colorindex {flex-direction: column;}
-    .encabezado {width: 60%;}
-    .buscadorinicio{ width: 50%;
-    height: 50%;}
-    .imagenizquierda{ margin: 10 20 20 10;}
-    .imagenderecha{margin: 10 20 20 10;}
-    .textoprincipal{display: none;
-    align-items: center;
-    position: relative;
-        width: 50%;
-        text-align: center;
-        position: relative;
-        top: -626px;
-        right: -29px;}
-    }
-    
-    @media (max-width:768){
-    .colornav1 {display: none;
-    flex-direction: column;}
-        .colorindex {flex-direction: column;
-        border-radius: 100%;}
-        .textoprincipal{ height: auto;
-        width: auto;}
+  .headerindex {width: 80%;
+  justify-content: space-around;
+  align-items: center;}
+  .colornav1{width: 70%;
+  display: inline;}
+  .colorindex {flex-direction: column;}
+  .encabezado {width: 60%;}
+  .buscadorinicio{ width: 50%;
+  height: 50%;}
+  .imagenizquierda{ margin: 10 20 20 10;}
+  .imagenderecha{margin: 10 20 20 10;}
+  .textoprincipal{display: none;
+  align-items: center;
+  position: relative;
+      width: 50%;
+      text-align: center;
+      position: relative;
+      top: -626px;
+      right: -29px;}
+  }
+  
+  @media (max-width:768){
+  .colornav1 {display: none;
+  flex-direction: column;}
+      .colorindex {flex-direction: column;
+      border-radius: 100%;}
+      .textoprincipal{ height: auto;
+      width: auto;}
 
 @media (max-width: 1024) {
-  .headerindex {
-    width: 80%;
-    justify-content: space-around;
-    align-items: center;
-  }
+.headerindex {
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
 
-  .colornav1 {
-    width: 70%;
-    display: inline;
-  }
+.colornav1 {
+  width: 70%;
+  display: inline;
+}
 
-  .colorindex {
-    flex-direction: column;
-  }
+.colorindex {
+  flex-direction: column;
+}
 
-  .encabezado {
-    width: 60%;
-  }
+.encabezado {
+  width: 60%;
+}
 
-  .buscadorinicio {
-    width: 50%;
-    height: 50%;
-  }
+.buscadorinicio {
+  width: 50%;
+  height: 50%;
+}
 
-  .imagenizquierda, .imagenderecha {
-    margin: 10 20 20 10;
-  }
+.imagenizquierda, .imagenderecha {
+  margin: 10 20 20 10;
+}
 
-  .textoprincipal {
-    display: none;
-    align-items: center;
-    position: relative;
-    width: 50%;
-    text-align: center;
-    position: relative;
-    top: -626px;
-    right: -29px;
-  }
+.textoprincipal {
+  display: none;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  top: -626px;
+  right: -29px;
+}
 }
 
 @media (max-width: 768) {
- /* Estilos base */
+/* Estilos base */
 ul {
-    list-style: none;
-    padding: 0;
-  }
-  
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  text-align: center;
+  padding: 1rem; 
+}
+
+@media screen and (max-width: 768px) {
   li {
-    display: inline-block;
-    text-align: center;
-    padding: 1rem; 
+    display: block; 
+    padding: 0.5rem; 
   }
-  
-  @media screen and (max-width: 768px) {
-    li {
-      display: block; 
-      padding: 0.5rem; 
-    }
-  }
-  
-  }
+}
 
-  /*peliculas*/
+}
 
-  .navbarpeliculas ul li {
-    flex-direction: column;
-  }
+/*peliculas*/
+
+.navbarpeliculas ul li {
+  flex-direction: column;
+}
 
 
 @media (max-width: 320) {
-  
-  .textoprincipal {
-    text-align: left;
-  }
-    /*peliculas*/
-    .navbarpeliculas ul li {flex-direction: column;}    
-    .navbarpeliculas a span {
-        flex-direction: column;
-      }
 
+.textoprincipal {
+  text-align: left;
+}
+  /*peliculas*/
+  .navbarpeliculas ul li {flex-direction: column;}    
+  .navbarpeliculas a span {
+      flex-direction: column;
     }
+
+  }
 
 @media (max-width:320){
 .textoprincipal{text-align: left;}
 
+.sitiopeliculas a span {display: none;}
 
-    
-    .sitiohistoria {display:none;}
-
- /*peliculas*/
- .sitiopeliculas a span {display: none;}
-
- .navbarpeliculas a span {flex-direction: column;}
+.navbarpeliculas a span {flex-direction: column;}
 
 }
 
 
-  /*historia*/
+/*historia*/
 
-  .navbarhistoria ul li a {
-    flex-direction: column;
-  }
+.navbarhistoria ul li a {
+  flex-direction: column;
+}
+.sitiohistoria {display:none;}
 
-  .sitiohistoria, .sitiopeliculas a span {
-    display: none;
-  }
+.sitiohistoria, .sitiopeliculas a span {
+  display: none;
+}
 }   .navbarhistoria ul li a { 
-    flex-direction: column;}
+  background-color: rgb(238, 255, 105);
+  flex-direction: column;}
+  
     
-      
-            
-      
+          
+

@@ -1,79 +1,117 @@
-  /* inicio INDEX*/
 
-  .colornav1 li {list-style: none;
-    display: inline;
-    text-align: center;
-    padding: 3rem;}
-    a{text-decoration:color(from color srgb r g b);}
-
-  .button1{
+.encabezado {
+    height: auto;
+    width: auto;
+    margin-top: 20px;
+  }
+  
+  .colornav1 {
+    background-color: rgb(5, 5, 5);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .colorindex {
+    color: gold;
+  }
+  
+  .icono {
+    background-color: gold;
+  }
+  
+  .button1, .button2 {
     font-family: "Holtwood One SC";
     padding: 10px 10px;
     background-position: right;
-background-color: rgb(148, 46, 245);
-}
-.button2 {font-family: "Holtwood One SC";
-    padding: 10px 10px;
-    background-position: right;
-background-color: rgb(148, 46, 245);}
-
-.buscadorinicio {flex-direction: row;
+    background-color: rgb(148, 46, 245);
+  }
+  
+  .buscadorinicio {
+    flex-direction: row;
     justify-content: right;
     margin-top: 20px;
-    width: 20px;
-    min-height: 20px;
-}
-.colornav1 {background-color: $color-fuente;
-width: 100%;
-height: 100%;}
-
-.colorindex {background-color:$background-color ;}
-
-.icono {background-color: $background-color;}
-
-.galeria-contenedora {
+  }
+  
+  .galeria-contenedora {
     margin-top: -60px;
     width: 100%;
     max-width: 1100px;
     margin: 40px auto;
-
     display: grid;
- grid-template-columns: repeat(auto-fit minmax(250px 1fr));
- background-color: rgb(182, 39, 238);
-}
-.galeria-contenedora img {height: 90%;
-    width: 20%;
-object-fit: cover;}
-
-.primerafila {@include flex}
-    .segundafila {@include flex}
-
-
-.encabezado {
-height: auto;
-width: auto;
-margin-top: 20px;}
-
-.imagenizquierda {margin: 60px 30px 30px -1000px;}
-
-.imagenderecha {margin:-620px 20px 20px 1000px;}
-
-.textoprincipal {display: flex; width: 100px;
-text-align: center; position: relative;
-top: -611px;;right: -611px;
-}
-.carrusel {display: flex;
-width: 600px;
-height: 430px;}
- img{ width: 0px;
-flex-grow: 1;
-object-fit: cover;
-opacity: .8;
-transition: .5s ease;}
- img:hover {cursor: crosshair;
-width: 300px;
-opacity: 1;
-filter: contrast(120%);}
-
-.carrusel {margin-bottom: 100px;}
+    grid-template-columns: repeat(auto-fit minmax(250px 1fr));
+    background-color: rgb(182, 39, 238);
+  
+    img {
+      height: 90%;
+      width: 20%;
+      object-fit: cover;
+    }
+  }
+  
+  .primerafila, .segundafila {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .imagenizquierda {
+    margin-left: -900px; 
+  }
+  
+  .imagenizquierda img {
+    max-width: 100%; 
+    height: auto; 
+  }
+  
+  .imagenderecha {
+    margin-right: -900px;
+    margin-top: -600px; 
+  }
+  
+  .imagenderecha img {
+    max-width: 100%;
+    height: auto; 
+  }
+  
+  .textoprincipal {
+    display: flex;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    top: -550px;
+    right: -611px;
+  }
+  
+  .imagenesmovimiento {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 80%; 
+    height: 60%; 
+  }
+  
+  
+  .imagenesmovimiento  img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: width 0.7s ease; 
+  }
+  
+  .imagenesmovimiento img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  
+  .imagenesmovimiento {
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-top: -300px;
+    margin-right: 100px;
+  }
+  
 

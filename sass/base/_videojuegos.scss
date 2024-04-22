@@ -10,20 +10,21 @@
         position: relative;
         padding: 0 2rem;
     }
-    .colornav3 {background-color: $color-fuente;}
-    .colornav3  ul li {list-style: none;
+    .colornav {background-color: $color-fuente;}
+    .colornav  ul li {list-style: none;
         display: inline;
         text-align: center;
         padding: 3rem;}
+        
         a{text-decoration:color(from color srgb r g b);
     background-color: rgb(5, 5, 5);}
     
-    .h1{margin: left -100px;;}
 
     .titulovideojuegos {text-align: center;
-    height: 70px;
-    margin: 467px 192px -16px -717px;
-    ;}
+    margin-top: 20px;
+margin-bottom: 20px;
+margin-left: 30px;
+margin-right: 30px;}
     
     
     .videojuegostexto {text-align: center;
@@ -32,17 +33,19 @@
     text-align: center; position: relative;
     top: -1260px;;right: -535px
     }
-    main section {display: flex;
-        width: 300px;
-        height: 300px;}
-         img{ width: 0px;
+    .imagenvideo {
+        display: flex;
+        width: -300px;
+        height: -130px;
+    }
+    .imagenvideo img {
+        width: 0px;
         flex-grow: 1;
         object-fit: cover;
         opacity: .8;
-        transition: .5s ease;}
-         img:hover {cursor: crosshair;
-        width: 300px;
-        opacity: 1;
-        filter: contrast(120%);}
-        .imagenvideo{ width: 200px;
-        margin: bottom 200px;}
+        transition: .5s;
+    }
+    .imagenvideo img :hover {cursor: crosshair;
+    width:150px;
+opacity: 1;
+filter: contrast(120%);}
