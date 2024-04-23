@@ -22,30 +22,48 @@
   <link rel="stylesheet" href="./css/styles.css"> 
 </head>
 
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+const menuBtn = document.querySelector('.menu-btn');
+const navList = document.querySelector('.nav-list');
+
+menuBtn.addEventListener('click', function() {
+navList.classList.toggle('open');
+});
+});
+</script>
+
 <body class="indexbody">
   
   <header>
-      <div>
+    <div>
       <nav class="colornav1">
-      <ul>
-        <img class="encabezado" src="./assets/img/inicio/gotham.jpg" alt="">
-        <li><a class="colorindex" href="./pages/comics.html">comics<img class="icono" src="./assets/img/inicio/Bat.png" alt=""></a></li>
-        <li><a class="colorindex" href="./pages/historia.html">historia<img class="icono" src="./assets/img/inicio/Bat.png" alt=""></a></li>
-        <li><a class="colorindex" href="./pages/peliculas.html">peliculas<img class="icono" src="./assets/img/inicio/Bat.png" alt=""></a></li>
-        <li><a class="colorindex" href="./pages/videojuegos.html">videojuegos<img class="icono" src="./assets/img/inicio/Bat.png" alt=""></a></li>
-      </ul>
-    </nav>
+        <ul class="nav-list">
+          <img class="encabezado" src="./assets/img/inicio/gotham.jpg" alt="">
+          <li><a class="colorindex" href="./pages/comics.html">comics<img class="icono" src="./assets/img/inicio/Bat.png" alt=""></a></li>
+          <li><a class="colorindex" href="./pages/historia.html">historia<img class="icono" src="./assets/img/inicio/Bat.png" alt=""></a></li>
+          <li><a class="colorindex" href="./pages/peliculas.html">peliculas<img class="icono" src="./assets/img/inicio/Bat.png" alt=""></a></li>
+          <li><a class="colorindex" href="./pages/videojuegos.html">videojuegos<img class="icono" src="./assets/img/inicio/Bat.png" alt=""></a></li>
+        </ul>
+        <button class="menu-btn">&#9776;</button>  
+        <ul class="dropdown-list">
+          <li><a href="./pages/comics.html">comics</a></li>
+          <li><a href="./pages/historia.html">historia</a></li>
+          <li><a href="./pages/peliculas.html">peliculas</a></li>
+          <li><a href="./pages/videojuegos.html">videojuegos</a></li>
+        </ul>
+      </nav>
     </div>
     <div>
       <button class="button1"><a href="iniciar sesion"></a>iniciar sesion</button>
       <button class="button2"><a href="registrarse"></a>registrarse</button>
-  </div>
-<div class="buscadorinicio">
-  <form action="">
-    <label for="buscador"><img src="./assets/img/inicio/Search.png" alt=""></label>
-    <input type="search" id="buscador">
-  </form>
-</div>
+    </div>
+    <div class="buscadorinicio">
+      <form action="">
+        <label for="buscador"><img src="./assets/img/inicio/Search.png" alt=""></label>
+        <input type="search" id="buscador">
+      </form>
+    </div>
   </header>
 
   <main> 

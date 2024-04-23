@@ -416,7 +416,48 @@ li {
 }   .navbarhistoria ul li a { 
   background-color: rgb(238, 255, 105);
   flex-direction: column;}
+  .dropdown-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(5, 5, 5);
+    width: 100%;
+  }
   
+ 
+  .menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: gold;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .menu-btn {
+      display: block;
+    }
+    
+    .nav-list {
+      display: none;
+    }
+    
+    .nav-list.open {
+      display: block;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .dropdown-list li {
+      display: block;
+      text-align: center;
+      padding: 1rem;
+    }
+  }
     
           
 

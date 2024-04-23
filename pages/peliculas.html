@@ -12,28 +12,52 @@
     <link rel="stylesheet" href="../css/styles.css"> 
 </head>
 
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+const menuBtn = document.querySelector('.menu-btn');
+const navList = document.querySelector('.nav-list');
+
+menuBtn.addEventListener('click', function() {
+navList.classList.toggle('open');
+});
+});
+</script>
+
 <body class="seccion-peliculas">
-    <header>
-        <div>
-            <nav class="navbarpeliculas">
-              <ul>
-                <img class="encabezado" src="../assets/img/inicio/gotham.jpg" alt="">
-                <li><a class="colorindex" href="./comics.html">comics<img class="icono" src="../assets/img/inicio/Bat.png" alt=""></a></li>
-                <li><a class="colorindex" href="./historia.html">historia<img class="icono" src="../assets/img/inicio/Bat.png" alt=""></a></li>
-                <li><a class="colorindex" href="../index.html">inicio<img class="icono" src="../assets/img/inicio/Bat.png" alt=""></a></li>
-                <li><a class="colorindex" href="./videojuegos.html">videojuegos<img class="icono" src="../assets/img/inicio/Bat.png" alt=""></a></li>
-            </ul>
-        </nav>
-        <h1>batman en las pantallas</h1>
+  <header>
+    <div>
+      <nav class="colornav1">
+        <ul class="nav-list">
+          <img class="encabezado" src="../assets/img/inicio/gotham.jpg" alt="">
+          <li><a class="colorindex" href="../index.html">inicio<img class="icono" src="../assets/img/inicio/Bat.png" alt=""></a></li>
+          <li><a class="colorindex" href="./historia.html">historia<img class="icono" src="../assets/img/inicio/Bat.png" alt=""></a></li>
+          <li><a class="colorindex" href="./comics.html">comics<img class="icono" src="../assets/img/inicio/Bat.png" alt=""></a></li>
+          <li><a class="colorindex" href="./videojuegos.html">videojuegos<img class="icono" src="../assets/img/inicio/Bat.png" alt=""></a></li>
+        </ul>
+        <button class="menu-btn">&#9776;</button>  
+        <ul class="dropdown-list">
+          <li><a href="../index.html">inicio</a></li>
+          <li><a href="./historia.html">historia</a></li>
+          <li><a href="./comics.html">comics</a></li>
+          <li><a href="./videojuegos.html">videojuegos</a></li>
+        </ul>
+      </nav>
     </div>
     <div>
+      <button class="button1"><a href="iniciar sesion"></a>iniciar sesion</button>
+      <button class="button2"><a href="registrarse"></a>registrarse</button>
+    </div>
+    <div class="buscadorinicio">
       <form action="">
         <label for="buscador"><img src="../assets/img/inicio/Search.png" alt=""></label>
-        <input type="search" id="buscador"  >
+        <input type="search" id="buscador">
       </form>
     </div>
-    </header>
+  </header>
     <main>
+      <section>
+      <h1>batman en las pantallas</h1>
+    </section>
       <div>
         <section>
           <img src="../assets/peliculas/Rectangle46.png" alt="">
