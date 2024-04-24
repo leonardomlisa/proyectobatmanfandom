@@ -44,6 +44,10 @@ body {
 
 .icono {
   background-color: gold;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 10px;
 }
 
 .button1, .button2 {
@@ -51,13 +55,18 @@ body {
   padding: 10px 10px;
   background-position: right;
   background-color: rgb(148, 46, 245);
-}
+  margin-top: 10px;
+border-radius: 10px;}
 
 .buscadorinicio {
   flex-direction: row;
   justify-content: right;
   margin-top: 20px;
 }
+.buscadorinicio img {width: 50px;
+height: 50px;
+margin-top: 20px;
+border-radius: 10px;}
 
 .galeria-contenedora {
   margin-top: -60px;
@@ -114,8 +123,8 @@ body {
   display: flex;
   justify-content: center; 
   align-items: center; 
-  width: 80%; 
-  height: 60%; 
+  width: 70%; 
+  height: 40%; 
 }
 
 
@@ -129,7 +138,7 @@ body {
 
 .imagenesmovimiento img:hover {
   cursor: crosshair;
-  width: 300px;
+  width: 100px;
   opacity: 1;
   filter: contrast(120%);
 }
@@ -140,6 +149,10 @@ body {
   margin-top: -300px;
   margin-right: 100px;
 }
+
+.footerintegral {background-color: blueviolet;
+width: auto;
+height: auto;}
 
 
 
@@ -246,6 +259,43 @@ margin-right: 30px;};
 width:150px;
 opacity: 1;
 filter: contrast(120%);}
+
+.contenedorvideo {
+  position: relative;
+  min-height: 100px;
+}
+.contenedorvideo .contenedorsecundariovideo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.contenedorvideo .contenedorsecundariovideo .video {
+  height: 250px;
+  width: 350px;
+  border: 5px solid;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.7);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.contenedorvideo .contenedorsecundariovideo .video iframe {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+
+.contenedorvideo .contenedorsecundariovideo .video:hover iframe {
+  transform: scale(1.1);
+}
+
+
+
+
 
 /*pagina PELICULAS*/
 
