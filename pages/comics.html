@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="clasicos indispensables de batman">
-    <meta name="keywords" content="batman la broma asesisa">
-    <meta name="keywords" content="batman año 1">
-    <meta name="keywords" content="batman caballero blanco">
-    <title>comics</title>
-    <link rel="stylesheet" href="../css/styles.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="clasicos indispensables de batman">
+  <meta name="keywords" content="batman la broma asesisa">
+  <meta name="keywords" content="batman año 1">
+  <meta name="keywords" content="batman caballero blanco">
+  <meta name="robots" content="no follow">
+  <title>comics</title>
+  <link rel="shortcut icon" href="../assets/img/inicio/batmanicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
-const menuBtn = document.querySelector('.menu-btn');
-const navList = document.querySelector('.nav-list');
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuBtn = document.querySelector('.menu-btn');
+    const navList = document.querySelector('.nav-list');
 
-menuBtn.addEventListener('click', function() {
-navList.classList.toggle('open');
-});
-});
+    menuBtn.addEventListener('click', function () {
+      navList.classList.toggle('open');
+    });
+  });
 </script>
 
 <body class="seccion-comics">
-   
+
   <header>
     <div>
       <nav class="colornav1">
         <ul class="nav-list">
-          <img class="encabezado" src="../assets/img/inicio/gotham.jpg" alt="">
-          <li><a class="colorindex" href="../index.html">inicio<img class="icono" src="../assets/img/inicio/Bat.png" alt=""></a></li>
-          <li><a class="colorindex" href="./historia.html">historia<img class="icono" src="../assets/img/inicio/Bat.png" alt=""></a></li>
-          <li><a class="colorindex" href="./peliculas.html">peliculas<img class="icono" src="../assets/img/inicio/Bat.png" alt=""></a></li>
-          <li><a class="colorindex" href="./videojuegos.html">videojuegos<img class="icono" src="../assets/img/inicio/Bat.png" alt=""></a></li>
+          <img class="encabezado" src="../assets/img/inicio/gotham.jpg" alt="gotham city">
+          <li><a class="colorindex" href="../index.html">inicio<img class="icono" src="../assets/img/inicio/Bat.png"
+                alt=""></a></li>
+          <li><a class="colorindex" href="./historia.html">historia<img class="icono" src="../assets/img/inicio/Bat.png"
+                alt=""></a></li>
+          <li><a class="colorindex" href="./peliculas.html">peliculas<img class="icono"
+                src="../assets/img/inicio/Bat.png" alt="icono"></a></li>
+          <li><a class="colorindex" href="./videojuegos.html">videojuegos<img class="icono"
+                src="../assets/img/inicio/Bat.png" alt="icono"></a></li>
         </ul>
-        <button class="menu-btn">&#9776;</button>  
+        <button class="menu-btn">&#9776;</button>
         <ul class="dropdown-list">
           <li><a href="../index.html">inicio</a></li>
           <li><a href="./historia.html">historia</a></li>
@@ -49,7 +56,7 @@ navList.classList.toggle('open');
     </div>
     <div class="buscadorinicio">
       <form action="">
-        <label for="buscador"><img src="../assets/img/inicio/Search.png" alt=""></label>
+        <label for="buscador"><img src="../assets/img/inicio/Search.png" alt="buscador"></label>
         <input type="search" id="buscador">
       </form>
     </div>
@@ -57,72 +64,139 @@ navList.classList.toggle('open');
 
 
 
-    <main>
-        
-      <div>
+  <main>
+
+    <div class="maincomics">
+      <div class="titulocomics">
         <h1>los primeros años guia de lectura</h1>
-            <section class="primeraseccion">
-                <img src="../assets/img/comics/primercomic.png" alt="">
-                <p class="color1">detective comics #33 “El caso del sindicato quimico” 
-                    primera aparicion (<strong>Bob Kane</strong>, Sheldon moldoff, Bill Finger)
-                    </p>
-                    <img src="../assets/img/comics/año1.png" alt="">
-                    <p class="color2">“batman año 1”
-                        (<strong>Frank Miller</strong>,David Mazzucchelli,Richmond Lewis)</p>
-                        <img src="../assets/img/comics/detectivecomics2.png" alt="">
-                        <p class="color3">detective comics #36 “el progreso de Strange”, primer villano (Bob Kane,Jerry Robinson y Bill Finger)</p>
-</section>
-</div>
-
-<div>
-  <h2 class="titulo2">clasicos indispensables</h2>
-<section class="segundaseccion">
-    <img src="../assets/img/comics/halloween.png" alt="">
-    <p class="color4">“Batman un largo Halloween” 
-        (Jeph Loeb, Tim Sale)</p>
-        <img src="../assets/img/comics/thedark.png" alt="">
-        <p class="color5">“Batman el regreso del caballero oscuro” (Frank Miller)</p>
-        <img src="../assets/img/comics/bromaasesina.png" alt="">
-        <p class="color6">“Batman la broma asesina” (Alan Moore,Brian Bolland)</p>
-</section>
-</div>
-
-<div>
-  <h3 class="titulo3">era moderna</h3>
-<section class="terceraseccion">
-    <img src="../assets/img/comics/hush.png" alt="">
-    <p class="color7">“Batman Hush” ( Loeb, LEE, Williams)</p>
-    <img src="../assets/img/comics/renacimiento.png" alt="">
-    <p class="color8">“Batman: yo soy gotham” ( Snyder, King, Finch, Reis, Weeks, Janin)</p>
-    <img src="../assets/img/comics/caballeroblanco.png" alt="">
-    <p class="color9">“Batman Caballero Blanco” (Sean Murphy, Matt Hollingsworth)</p>
-</section>
-</div>
-</main>
-    <!-- comienzo del footer -->
-    <footer class="footerintegral">
-        <div><div><h3>redes sociales</h3></div>
-  <ul>
-    <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="../assets/img/redes/facebook.png" alt=""></a></li>
-    <li><a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/redes/instagram.png" alt=""></a></li>
-    <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="../assets/img/redes/x.png" alt=""></a></li>
-    <li><a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/redes/youtube.png" alt=""></a></li>
-    </ul>
-</div>
-  <div>
-    <ul>
-      <li><a href=""><img src="../assets/img/inicio/Batmanlogof.png" alt=""></a></li>
-       <p>al inicio de la baticueva</p>
-    </ul>
-  </div>
-  <div>
-    <ul>
-      <li><a href=""><span>el caballero de la noche</span><img src="../assets/img/inicio/Bat.png" alt=""></a></li>
-    </ul>
-  </div>
-  <div>
-    <ul><li><a href="https://www.dc.com/" target="_blank">batman es propiedad de dc comics</a></li></ul>
+      </div>
+      <p class="parrafocomics">
+        Batman hizo su primera aparición en action comics 12 en mayo de 1939, desde su debut Batman se convirtió
+        rápidamente en historieta fija de la cabecera, este fue el segundo gran éxito de la compañía que más tarde iba a
+        ser conocida como "dc comics" tras la aparición de Superman.
+        Como detalle de color en esta primera aparición los guantes de Batman eran de color purpura, en la entrega
+        siguiente eran beige como si no los llevara. Finalmente, lucio guantes azules en las páginas interiores, pero en
+        la portada iba sin ellos.
+        En su primera encarnación dibujada por Bob Kane, era un tipo de superhéroe implacable. Aunque en sus primeras
+        apariciones mato en raras ocasiones, aun no había desarrollado respeto por la vida humana. En esta primera
+        entrega, cuando atrapa al villano Striker, su gancho de izquierda arroja al criminal sobre una barandilla al
+        interior de un tanque de ácido. Luego de esto Batman comenta "Un final digno de su condición".
+      </p>
+      <section class="primeraseccion">
+        <img src="../assets/img/comics/primercomic.png" alt="comic1">
+        <p class="color1">detective comics #33 “El caso del sindicato quimico”
+          primera aparicion (<strong>Bob Kane</strong>, Sheldon moldoff, Bill Finger)
+        </p>
+        <img src="../assets/img/comics/año1.png" alt="comic2">
+        <p class="color2">“batman año 1”
+          (<strong>Frank Miller</strong>,David Mazzucchelli,Richmond Lewis)</p>
+        <img src="../assets/img/comics/detectivecomics2.png" alt="comic3">
+        <p class="color3">detective comics #36 “el progreso de Strange”, primer villano (Bob Kane,Jerry Robinson y Bill
+          Finger)</p>
+      </section>
     </div>
-    </footer>
-    </body>
+
+    <div class="maincomics">
+      <h1 class="titulo2">clasicos indispensables</h1>
+      <p class="parrafocomics">
+        Los comics que siguen a continuación son 3 clásicos que considero indispensables como el titulo lo menciona para
+        alguien que no es lector habitual del personaje, pero quiere comenzar a introducirse en el mundo del encapotado.
+        “Un largo Halloween” sumerge a Batman en su costado más detectivesco una historia de familias de la mafia e
+        intrigas y asesinatos sin respuesta un clásico de clásicos que se Disfruta de inicio a fin.
+        “Batman: The Dark Knight Returns” escrita e ilustrada por Frank Miller, es sin dudas el comic más icónico del
+        personaje. Fue publicado entre febrero y junio de 1986 en una miniserie de 4 números. Esta obra supuso una
+        revolución en el genero en un momento donde los superhéroes se conciben con complejos morales y mas violentos
+        que los de antaño.
+        narra cómo han pasado 10 años desde que Bruce Wayne, viejo y cansado, decidió retirarse de su vida de superhéroe
+        (particularmente, por la muerte de su antiguo pupilo Jason Todd).
+        “Batman la broma asesina” de Alan Moore es una obra maestra sin dudas, se estrena en 1988 y se centra en la
+        relación con su archienemigo el Joker.
+        Los sucesos del comic son realmente impactantes y te dejan con ganas de dar vuelta cada pagina para saber y
+        entender como sigue esta maravillosa historieta. El desarrollo de los personajes secundarios es sublime y
+        centramos los hechos en la familia del detective Gordon, según la teoría del Joker “cualquier persona necesita
+        un único mal día para volverse loco” y para demostrar su tesis ha escogido a Jim Gordon como su conejillo de
+        Indias particular.
+      </p>
+      <section class="segundaseccion">
+        <img src="../assets/img/comics/halloween.png" alt="comic4">
+        <p class="color4">“Batman un largo Halloween”
+          (Jeph Loeb, Tim Sale)</p>
+        <img src="../assets/img/comics/thedark.png" alt="comic5">
+        <p class="color5">“Batman el regreso del caballero oscuro” (Frank Miller)</p>
+        <img src="../assets/img/comics/bromaasesina.png" alt="comic6">
+        <p class="color6">“Batman la broma asesina” (Alan Moore,Brian Bolland)</p>
+      </section>
+    </div>
+
+    <div class="maincomics">
+      <h1 class="titulo3">era moderna</h1>
+      <p class="parrafocomics">
+        En la considerada “era moderna” los comics del personaje siguen siendo icónicos y sus historias no hacen mas que
+        mejorar, en estas etapas vemos a un Batman igualado al termino “Metahumano”, esto se da debido a las
+        interacciones con compañeros como Superman o Wonder Woman entre otros que por poderes y habilidades son
+        considerados como dioses, sin dudas el murciélago es el humano mas respetado del mundo del comic.
+        En esta etapa podemos encontrar historias excepcionales como “Batman Hush” (Fue escrito por Jeph Loeb, dibujado
+        por Jim Lee, entintado por Scott Williams y coloreado por Alex Sinclair) una historia en la cual se introduce a
+        un nuevo villano denominado “Hush” un villano misterioso y con mucha influencia en el mundo del crimen y la vida
+        de Bruce.
+        En “Batman yo soy Gotham” que forma parte del arco Renacimiento donde la editorial les da nuevas historias y
+        nuevos personajes a sus protagonistas vemos como la centralidad de la “bat familia” en la defensa de Gotham se
+        ve amenazada por la aparición de nuevos “superhéroes”. Es sin dudas una historia fresca y mas que entretenida
+        que sigue desarrollándose en las series de comics posteriores.
+        “Batman caballero blanco” es un “elsewolrds” es decir una historia ubicada en tiempos y lugares diferentes a la
+        línea temporal.
+        Una historia espectacular donde el payaso príncipe del crimen se ha curado de su locura, y pasa a llamarse Jack
+        Napier, bajo este nombre se embarca en una búsqueda para curar la ciudad que una vez aterrorizó. El escritor y
+        artista Sean Murphy ofrece un extraordinario de los grandes antagonistas del personaje.
+
+
+      </p>
+      <section class="terceraseccion">
+        <img src="../assets/img/comics/hush.png" alt="comic7">
+        <p class="color7">“Batman Hush” ( Loeb, LEE, Williams)</p>
+        <img src="../assets/img/comics/renacimiento.png" alt="comic8">
+        <p class="color8">“Batman: yo soy gotham” ( Snyder, King, Finch, Reis, Weeks, Janin)</p>
+        <img src="../assets/img/comics/caballeroblanco.png" alt="comic9">
+        <p class="color9">“Batman Caballero Blanco” (Sean Murphy, Matt Hollingsworth)</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footerintegral">
+    <div>
+      <div>
+        <h3>redes sociales</h3>
+      </div>
+      <ul>
+        <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="../assets/img/redes/facebook.png"
+              alt="facebook"></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/redes/instagram.png"
+              alt="instagram"></a></li>
+        <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="../assets/img/redes/x.png" alt="x"></a>
+        </li>
+        <li><a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/redes/youtube.png"
+              alt="youtube"></a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li><a href=""><img src="../assets/img/inicio/Batmanlogof.png" alt="logo"></a></li>
+        <p>al inicio de la baticueva</p>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li><a href=""><span>el caballero de la noche</span><img src="../assets/img/inicio/Bat.png" alt="icono"></a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li><a href="https://www.dc.com/" target="_blank">batman es propiedad de dc comics</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>

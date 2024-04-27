@@ -1,117 +1,131 @@
 
+/* inicio INDEX*/
+
 .encabezado {
-    height: auto;
-    width: auto;
-    margin-top: 20px;
-  }
-  
-  .colornav1 {
-    background-color: rgb(5, 5, 5);
-    width: 100%;
-    height: 100%;
-  }
-  
-  .colorindex {
-    color: gold;
-  }
-  
-  .icono {
-    background-color: gold;
-  }
-  
-  .button1, .button2 {
-    font-family: "Holtwood One SC";
-    padding: 10px 10px;
-    background-position: right;
-    background-color: rgb(148, 46, 245);
-  }
-  
-  .buscadorinicio {
-    flex-direction: row;
-    justify-content: right;
-    margin-top: 20px;
-  }
-  
-  .galeria-contenedora {
-    margin-top: -60px;
-    width: 100%;
-    max-width: 1100px;
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit minmax(250px 1fr));
-    background-color: rgb(182, 39, 238);
-  
-    img {
-      height: 90%;
-      width: 20%;
-      object-fit: cover;
-    }
-  }
-  
-  .primerafila, .segundafila {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .imagenizquierda {
-    margin-left: -900px; 
-  }
-  
-  .imagenizquierda img {
-    max-width: 100%; 
-    height: auto; 
-  }
-  
-  .imagenderecha {
-    margin-right: -900px;
-    margin-top: -600px; 
-  }
-  
-  .imagenderecha img {
-    max-width: 100%;
-    height: auto; 
-  }
-  
-  .textoprincipal {
-    display: flex;
-    width: 100px;
-    text-align: center;
-    position: relative;
-    top: -550px;
-    right: -611px;
-  }
-  
-  .imagenesmovimiento {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    width: 80%; 
-    height: 60%; 
-  }
-  
-  
-  .imagenesmovimiento  img {
-    width: 0;
-    flex-grow: 1;
+  height: auto;
+  width: auto;
+  margin-top: 20px;
+}
+
+.colornav1 {
+  background-color: rgb(5, 5, 5);
+  width: 100%;
+  height: 100%;
+}
+
+.colorindex {
+  color: gold;
+}
+
+.icono {
+  background-color: gold;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.button1, .button2 {
+  font-family: "Holtwood One SC";
+  padding: 10px 10px;
+  background-position: right;
+  background-color: rgb(148, 46, 245);
+  margin-top: 10px;
+border-radius: 10px;}
+
+.buscadorinicio {
+  flex-direction: row;
+  justify-content: right;
+  margin-top: 20px;
+}
+.buscadorinicio img {width: 50px;
+height: 50px;
+margin-top: 20px;
+border-radius: 10px;}
+
+.textoprincipal {
+  margin-top: 50px;
+}
+
+.presentacion {
+  margin-top: 50px;
+  background-color: blueviolet;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.slider-frame {
+  width: auto;
+  height: auto;
+  margin:  50px auto 0;
+}
+
+.slider-frame li {
+  list-style: none;
+  width: 100%;
+}
+
+.slider-frame img {
+  width: 35%;
+  border-radius: 10px;
+}
+
+.galeria-contenedora {
+  margin-top: -60px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit minmax(250px 1fr));
+  background-color: rgb(182, 39, 238);
+
+  img {
+    height: 90%;
+    width: 20%;
     object-fit: cover;
-    opacity: 0.8;
-    transition: width 0.7s ease; 
   }
-  
-  .imagenesmovimiento img:hover {
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-  }
-  
-  .imagenesmovimiento {
-    margin-bottom: 100px;
-    margin-left: 100px;
-    margin-top: -300px;
-    margin-right: 100px;
-  }
-  
+}
+
+.primerafila, .segundafila {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.imagenesmovimiento {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 70%; 
+  height: 40%; 
+}
+
+
+.imagenesmovimiento  img {
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: width 0.7s ease; 
+}
+
+.imagenesmovimiento img:hover {
+  cursor: crosshair;
+  width: 100px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.imagenesmovimiento {
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-top: -300px;
+  margin-right: 100px;
+}
+
+.footerintegral {background-color: blueviolet;
+width: auto;
+height: auto;}
 

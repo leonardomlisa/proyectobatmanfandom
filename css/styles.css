@@ -68,6 +68,33 @@ height: 50px;
 margin-top: 20px;
 border-radius: 10px;}
 
+.textoprincipal {
+  margin-top: 50px;
+}
+
+.presentacion {
+  margin-top: 50px;
+  background-color: blueviolet;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.slider-frame {
+  width: auto;
+  height: auto;
+  margin:  50px auto 0;
+}
+
+.slider-frame li {
+  list-style: none;
+  width: 100%;
+}
+
+.slider-frame img {
+  width: 35%;
+  border-radius: 10px;
+}
+
 .galeria-contenedora {
   margin-top: -60px;
   width: 100%;
@@ -91,34 +118,6 @@ border-radius: 10px;}
   gap: 10px;
 }
 
-.imagenizquierda {
-  margin-left: -900px; 
-}
-
-.imagenizquierda img {
-  max-width: 100%; 
-  height: auto; 
-}
-
-.imagenderecha {
-  margin-right: -900px;
-  margin-top: -600px; 
-}
-
-.imagenderecha img {
-  max-width: 100%;
-  height: auto; 
-}
-
-.textoprincipal {
-  display: flex;
-  width: 100px;
-  text-align: center;
-  position: relative;
-  top: -550px;
-  right: -611px;
-}
-
 .imagenesmovimiento {
   display: flex;
   justify-content: center; 
@@ -132,7 +131,7 @@ border-radius: 10px;}
   width: 0;
   flex-grow: 1;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.6;
   transition: width 0.7s ease; 
 }
 
@@ -145,14 +144,15 @@ border-radius: 10px;}
 
 .imagenesmovimiento {
   margin-bottom: 100px;
-  margin-left: 100px;
-  margin-top: -300px;
+  margin-left: 250px;
+  margin-top: -0px;
   margin-right: 100px;
 }
 
-.footerintegral {background-color: blueviolet;
-width: auto;
-height: auto;}
+.footerintegral {
+  background-color: rgb(126, 43, 236);
+width: 100%;
+height: 100%;}
 
 
 
@@ -177,16 +177,28 @@ height: auto;}
 .buscador {
   justify-content: space-between;
 }
+.titulocomics {  text-align: center;
+  margin-top: 3rem;
+}
+
+.parrafocomics {margin: 1rem 8rem 5rem 5rem ;
+  text-align: center;} 
+
+.maincomics {
+  flex-wrap: wrap;
+}
 
 .primeraseccion, .segundaseccion {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 2rem 2rem 2rem 2rem;
 }
 
 .terceraseccion {
   display: flex;
   flex-direction: row;
+  margin: 2rem 2rem 2rem 2rem;
 }
 
 .titulo2, .titulo3 {
@@ -196,6 +208,7 @@ height: auto;}
 .color1, .color2, .color3, .color4, .color5, .color6, .color7, .color8, .color9 {
   background-color: rgb(221, 228, 96);
 }
+
 
 /*pagina VIDEOJUEGOS*/
 
@@ -207,12 +220,7 @@ height: auto;}
   background-position: center;
 }
 
-.headervideojuegos {
-  position: relative;
-  padding: 0 2rem;
-}
-
-.colornav3 {
+.colornav {
   background-color: rgb(5, 5, 5);
 
   ul li {
@@ -235,14 +243,14 @@ margin-right: 30px;};
 
 .videojuegostexto {
   text-align: center;
-  width: 1000px;
   display: flex;
-  width: 100px;
-  text-align: center;
   position: relative;
-  top: -1260px;
-  right: -535px;
 }
+.videojuegostexto p {
+  margin: 5rem 4rem ;
+  text-align: center;
+}
+
 .imagenvideo {
   display: flex;
   width: -300px;
@@ -295,8 +303,6 @@ filter: contrast(120%);}
 
 
 
-
-
 /*pagina PELICULAS*/
 
 .seccion-peliculas {
@@ -314,6 +320,18 @@ filter: contrast(120%);}
   }
 }
 
+.peliculascontenido p {
+  margin: 1rem 8rem 5rem 5rem ;
+  text-align: center;
+}
+.peliculascontenido {
+  margin-top: 3rem;
+}
+
+.titulopeliculas {
+  text-align: center;
+  margin-top: 3rem;
+}
 
 /*pagina HISTORIA*/
 
@@ -329,6 +347,23 @@ filter: contrast(120%);}
   background-color: rgb(5, 5, 5);
 }
 
+.textohistoria {
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  border: 5px solid;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.7);
+  cursor: pointer;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.textohistoria p {
+  margin: 0.5rem 4rem; 
+  text-align: center;
+}
+
+
 /*MODIFICACIONES RESPONSIVE*/
 @media ( max-width:1024){
   .headerindex {width: 80%;
@@ -340,8 +375,6 @@ filter: contrast(120%);}
   .encabezado {width: 60%;}
   .buscadorinicio{ width: 50%;
   height: 50%;}
-  .imagenizquierda{ margin: 10 20 20 10;}
-  .imagenderecha{margin: 10 20 20 10;}
   .textoprincipal{display: none;
   align-items: center;
   position: relative;
@@ -360,35 +393,6 @@ filter: contrast(120%);}
       .textoprincipal{ height: auto;
       width: auto;}
 
-@media (max-width: 1024) {
-.headerindex {
-  width: 80%;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.colornav1 {
-  width: 70%;
-  display: inline;
-}
-
-.colorindex {
-  flex-direction: column;
-}
-
-.encabezado {
-  width: 60%;
-}
-
-.buscadorinicio {
-  width: 50%;
-  height: 50%;
-}
-
-.imagenizquierda, .imagenderecha {
-  margin: 10 20 20 10;
-}
-
 .textoprincipal {
   display: none;
   align-items: center;
@@ -399,7 +403,7 @@ filter: contrast(120%);}
   top: -626px;
   right: -29px;
 }
-}
+
 
 @media (max-width: 768) {
 /* Estilos base */
@@ -420,8 +424,77 @@ li {
     padding: 0.5rem; 
   }
 }
+@media screen and (min-width: 320px)
 
+{.imagenesmovimiento {display: none;} 
+  
 }
+
+
+/*comics*/
+@media screen and (min-width: 1024px) {
+  .maincomics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .primeraseccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .primeraseccion img {
+    width: 50%;
+  }
+  .primeraseccion p {
+    width: 50%;
+  }
+}
+
+
+  @media screen and (min-width: 768px) {
+    .maincomics {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .primeraseccion {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .primeraseccion img {
+      width: 50%;
+    }
+    .primeraseccion p {
+      width: 50%;
+    }
+  }
+  
+}
+
+@media screen and (min-width: 320px) {
+  .maincomics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .primeraseccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .primeraseccion img {
+    width: 50%;
+  }
+  .primeraseccion p {
+    width: 50%;
+  }
+}
+
+.imagenesmovimiento {display: none;}
+
+
 
 /*peliculas*/
 
@@ -435,7 +508,7 @@ li {
 .textoprincipal {
   text-align: left;
 }
-  /*peliculas*/
+
   .navbarpeliculas ul li {flex-direction: column;}    
   .navbarpeliculas a span {
       flex-direction: column;

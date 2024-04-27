@@ -9,3 +9,19 @@ background-position: center;
 } 
 
 .navbarhistoria {background-color:$color-fuente;}
+
+.textohistoria {
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    border: 5px solid;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    cursor: pointer;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .textohistoria p {
+    margin: 0.5rem 4rem; 
+    text-align: center;
+  }

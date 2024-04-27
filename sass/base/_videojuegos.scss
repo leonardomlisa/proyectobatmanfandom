@@ -6,33 +6,32 @@
     background-size: cover;
     background-position: center;
     }
-    .headervideojuegos{
-        position: relative;
-        padding: 0 2rem;
-    }
+
     .colornav {background-color: $color-fuente;}
     .colornav  ul li {list-style: none;
         display: inline;
         text-align: center;
         padding: 3rem;}
         
-        a{text-decoration:color(from color srgb r g b);
-    background-color: rgb(5, 5, 5);}
-    
+
 
     .titulovideojuegos {text-align: center;
     margin-top: 20px;
 margin-bottom: 20px;
 margin-left: 30px;
 margin-right: 30px;}
-    
-    
-    .videojuegostexto {text-align: center;
-    width: 1000px;
-    display: flex; width: 100px;
-    text-align: center; position: relative;
-    top: -1260px;;right: -535px
-    }
+       
+.videojuegostexto {
+    text-align: center;
+    display: flex;
+    position: relative;
+  }
+  .videojuegostexto p {
+    margin: 5rem 4rem ;
+    text-align: center;
+  }
+  
+
     .imagenvideo {
         display: flex;
         width: -300px;
@@ -49,3 +48,38 @@ margin-right: 30px;}
     width:150px;
 opacity: 1;
 filter: contrast(120%);}
+
+.contenedorvideo {
+    position: relative;
+    min-height: 100px;
+  }
+  .contenedorvideo .contenedorsecundariovideo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .contenedorvideo .contenedorsecundariovideo .video {
+    height: 250px;
+    width: 350px;
+    border: 5px solid;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .contenedorvideo .contenedorsecundariovideo .video iframe {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+  }
+  
+  .contenedorvideo .contenedorsecundariovideo .video:hover iframe {
+    transform: scale(1.1);
+  }
+  
+  

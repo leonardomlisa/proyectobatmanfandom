@@ -7,3 +7,10 @@ $color-fuente:rgb(5, 5, 5);
         flex-direction: row;
         justify-content: center;
     gap: 10px;}
+
+    body {
+      background-color: gold;
+      font-family: "Holtwood One SC", serif;
+      background-attachment: fixed;
+      text-align: center;
+    }
